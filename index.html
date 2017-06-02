@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="es-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Expresion Reg</title>
+</head>
+<body>
+	<script>
+		var cadena = "2016-01-01";
+		var er1 = new RegExp("[0-9]*-[0-9]*-[0-9]*");
+		var er2 = /ejemplo/
+		var resultado = er1.test(cadena);
+		document.write(resultado);
+
+
+
+	/*
+	^\d{4}([\-/.])(0?[1-9]|1[1-2])\1(3[01]|[12][0-9]|0?[1-9])$
+ 	Meta caracteres de sustitucion
+	. (punto) --> acepta cualquier caracter/simbolo
+	[] --> Listado de caracteres validos en ese lugar del patron  
+	[a-e] --> si entre corchetes tiene un guion entre dos simbolos es un rango ascendente
+	[a-eop] --> mezcla de rangos y opciones
+	(palabra|otraPalabra|unaultimapal)
+	
+	Atajos
+	\w --> representa cualquier caracter alfanumerico
+	\d ---> representa numeros del 0-9
+
+	Meta caracteres de cantidad
+	* --> lo que esta antes del * (punto, corchete o los parentesis o caracter estatico)
+	puede estar, puede no estar ,puede repetir
+	? --> lo que esta antes del signo puede no estar, pero si aparece es SOLO UNA VEZ
+	+ --> lo que esta antes del signo tiene que estar como minimo una vez (se puede repetir muchas veces)
+	{num} -->lo que esta antes tiene que aparecer esa cantidad de veces 
+	{num,otroNum} --> lo que esta antes tiene que aparecer entre esas cantidades (ambas inclusive)
+	{num,} --> definiendo un minimo, es decir debe aparecer desde esa cantidad de veces
+	*/
+	</script>
+</body>
+</html>
