@@ -1,23 +1,23 @@
-Definir el diseÒo de la API de JDBC
+Definir el dise√±o de la API de JDBC
 
 Conectarse a una base de datos utilizando un controlador JDBC
 
 Enviar consultas y obtener resultados de la base de datos
 
-Especificar la informaciÛn del controlador JDBC externamente
+Especificar la informaci√≥n del controlador JDBC externamente
 
 Realizar operaciones CRUD utilizando la API JDBC
 
 2-------------------------------------------------- 
 
-JDBC es un conjunto de clases e interfaces java que permiten la manipulaciÛn
+JDBC es un conjunto de clases e interfaces java que permiten la manipulaci√≥n
 de sentencias sql de una fuente de datos (Base de datos)
 
 El Api JDBC proporciona a las aplicaciones Java un mecanismo
 estandar e independiente de la plataforma para el acceso a la 
 moyoria de las bases de datos
 
-Cada fabricante de BD se encargar· de proporcionar un driver JDBC especifico
+Cada fabricante de BD se encargar√° de proporcionar un driver JDBC especifico
 para su BD
 
 Las actividades basicas que se utilizan en JDBC son :
@@ -32,54 +32,54 @@ paquete java.sql
 La API JDBC se compone de algunas clases concretas, como Fecha, Hora y SQLException, y un conjunto de interfaces
  que se implementan en una clase de controlador que proporciona el proveedor de la base de datos.
 
-Debido a que la implementaciÛn es una instancia v·lida de la firma de mÈtodo de interfaz, 
-despuÈs de cargar las clases de controlador del proveedor de base de datos, puede acceder 
+Debido a que la implementaci√≥n es una instancia v√°lida de la firma de m√©todo de interfaz, 
+despu√©s de cargar las clases de controlador del proveedor de base de datos, puede acceder 
 a ellas siguiendo la secuencia mostrada en la diapositiva:
 
 Utilice la clase DriverManager para obtener una referencia a un Connectionobject utilizando el
- mÈtodo getConnection. La firma tÌpica de este mÈtodo es getConnection (url, nombre, contraseÒa),
- donde urlis la URL de JDBC y nombre y password son cadenas que la base de datos acepta para una conexiÛn.
+ m√©todo getConnection. La firma t√≠pica de este m√©todo es getConnection (url, nombre, contrase√±a),
+ donde urlis la URL de JDBC y nombre y password son cadenas que la base de datos acepta para una conexi√≥n.
 
 
-Utilice el objeto Statement para obtener una instancia de un mÈtodo ResultSet a travÈs de un mÈtodo 
-executeQuery (consulta). Este mÈtodo normalmente acepta una cadena (consulta), 
-donde query es una cadena est·tica.
+Utilice el objeto Statement para obtener una instancia de un m√©todo ResultSet a trav√©s de un m√©todo 
+executeQuery (consulta). Este m√©todo normalmente acepta una cadena (consulta), 
+donde query es una cadena est√°tica.
 
 3-------------------------------------------
 
 Para conectarnos a la base de datos una vez cargado el driver , utilizaremos 
-el mÈtodo getConnection que a su ves define una URL que indicara la ubicaciÛn de la bd
+el m√©todo getConnection que a su ves define una URL que indicara la ubicaci√≥n de la bd
 
 4--------------------------------------------
 Componentes claves del API jdbc
 
-La clase de controlador JDBC de cada proveedor tambiÈn implementa las clases clave de API que utilizar· para conectarse a la base de datos, ejecutar consultas y manipular datos:
+La clase de controlador JDBC de cada proveedor tambi√©n implementa las clases clave de API que utilizar√° para conectarse a la base de datos, ejecutar consultas y manipular datos:
 
-Java.sql.Connection: Una conexiÛn que representa la sesiÛn entre su aplicaciÛn Java y la base de datos
-
-
-
-Java.sql.Connection: Una conexiÛn que representa la sesiÛn entre su aplicaciÛn Java y la base de datos
+Java.sql.Connection: Una conexi√≥n que representa la sesi√≥n entre su aplicaci√≥n Java y la base de datos
 
 
-Java.sql.Statement: Objeto utilizado para ejecutar una sentencia SQL est·tica y devolver el resultado
+
+Java.sql.Connection: Una conexi√≥n que representa la sesi√≥n entre su aplicaci√≥n Java y la base de datos
+
+
+Java.sql.Statement: Objeto utilizado para ejecutar una sentencia SQL est√°tica y devolver el resultado
 
 
 Java.sql.ResultSet: Objeto que representa un conjunto de resultados de base de datos
 
 
-La principal ventaja de la API JDBC es que proporciona una forma flexible y port·til de comunicarse con una base de datos.
+La principal ventaja de la API JDBC es que proporciona una forma flexible y port√°til de comunicarse con una base de datos.
 
 El controlador JDBC proporcionado por un proveedor de base de datos implementa cada una de las siguientes interfaces Java.
-Su cÛdigo Java puede usar la interfaz sabiendo que el proveedor de la base de datos proporcionÛ la implementaciÛn de cada uno de los mÈtodos en la interfaz:
+Su c√≥digo Java puede usar la interfaz sabiendo que el proveedor de la base de datos proporcion√≥ la implementaci√≥n de cada uno de los m√©todos en la interfaz:
 
-ConexiÛn: Es una interfaz que proporciona una sesiÛn con la base de datos. Mientras el objeto de conexiÛn est· abierto,
- puede acceder a la base de datos, crear sentencias, obtener resultados y manipular la base de datos. Al cerrar una conexiÛn, se termina el acceso a 
-la base de datos y se cierra la conexiÛn abierta.
+Conexi√≥n: Es una interfaz que proporciona una sesi√≥n con la base de datos. Mientras el objeto de conexi√≥n est√° abierto,
+ puede acceder a la base de datos, crear sentencias, obtener resultados y manipular la base de datos. Al cerrar una conexi√≥n, se termina el acceso a 
+la base de datos y se cierra la conexi√≥n abierta.
 
 
-DeclaraciÛn: Es una interfaz que proporciona una clase para ejecutar sentencias SQL y devolver los resultados. 
-El Statementinterface es para consultas SQL est·ticas. Hay otras dos subinterfaces: PreparedStatement, que extiende Statementand CallableStatement,
+Declaraci√≥n: Es una interfaz que proporciona una clase para ejecutar sentencias SQL y devolver los resultados. 
+El Statementinterface es para consultas SQL est√°ticas. Hay otras dos subinterfaces: PreparedStatement, que extiende Statementand CallableStatement,
  que extiende PreparedStatement.
 
 ResultSet: Es una interfaz que gestiona los datos resultantes devueltos de un estado
@@ -96,21 +96,21 @@ Para ejecutar consultas SQL con JDBC, debe crear un objeto contenedor de consult
 Utilice la instancia Statement para ejecutar una consulta SQL:
 
 
-Tenga en cuenta que hay tres mÈtodos de ejecuciÛn de sentencia:
+Tenga en cuenta que hay tres m√©todos de ejecuci√≥n de sentencia:
 
 
 
 Una sentencia SQL se ejecuta en una base de datos utilizando una instancia de un objeto Statement.
 El objeto Statementobjeto es un objeto contenedor para una consulta.
-Un objeto Statement se obtiene a travÈs de Connectionobject: la conexiÛn a la base de datos.
-Por lo tanto, tiene sentido que desde una conexiÛn, obtiene un objeto que puede utilizar para escribir sentencias en la base de datos.
+Un objeto Statement se obtiene a trav√©s de Connectionobject: la conexi√≥n a la base de datos.
+Por lo tanto, tiene sentido que desde una conexi√≥n, obtiene un objeto que puede utilizar para escribir sentencias en la base de datos.
 
 6--------------------------------------------------------------
 Uso de un objeto ResultSetObject
 
-La primera invocaciÛn del mÈtodo next () devuelve true y rs apunta a la primera fila de datos
+La primera invocaci√≥n del m√©todo next () devuelve true y rs apunta a la primera fila de datos
 
-La ˙ltima invocaciÛn del mÈtodo next () devuelve false, y el rsinstance ahora es nulo
+La √∫ltima invocaci√≥n del m√©todo next () devuelve false, y el rsinstance ahora es nulo
 
 7---------------------------------------------------------------
 
@@ -121,7 +121,7 @@ Las operaciones CRUD (Crear, Recuperar, Actualizar y Eliminar) son equivalentes 
 CRUD Operations Using JDBC API: Retrieve
 
 
-Lines 15ñ16:Use a try-with-resources statement to get an instance of an object that implements the Connectioninterface.
+Lines 15‚Äì16:Use a try-with-resources statement to get an instance of an object that implements the Connectioninterface.
 
 Line 17:Use the connection object to get an instance of an object that implements the Statementinterface from the Connectionobject.
 
@@ -131,41 +131,41 @@ Line 18:Create a ResultSetby executing the string query using the Statementobjec
 
 Operaciones CRUD con JDBC: Recuperar
 
-Hacer un bucle a travÈs de todas las filas del ResultSet
+Hacer un bucle a trav√©s de todas las filas del ResultSet
 
-LÌneas 20-24: Obtenga los resultados de cada uno de los campos de datos de cada fila leÌdos en la tabla Empleados.
+L√≠neas 20-24: Obtenga los resultados de cada uno de los campos de datos de cada fila le√≠dos en la tabla Empleados.
 
-LÌneas 25-28: Imprima los campos de datos resultantes en la consola del sistema.
+L√≠neas 25-28: Imprima los campos de datos resultantes en la consola del sistema.
 
-LÌnea 30: SQLException: Esta clase extiende Exceptionthrown por el DriverManager, Statement y ResultSetmethods.
+L√≠nea 30: SQLException: Esta clase extiende Exceptionthrown por el DriverManager, Statement y ResultSetmethods.
 
-LÌnea 32: Esta es la llave de cierre para la instrucciÛn try-with-resources en la lÌnea 15. Este ejemplo es del proyecto SimpleJDBCExample.
+L√≠nea 32: Esta es la llave de cierre para la instrucci√≥n try-with-resources en la l√≠nea 15. Este ejemplo es del proyecto SimpleJDBCExample.
 
 
 run:Employee ID:   110Employee Name: Troy HammerBirth Date:    1965-03-31Salary:        102109.15
 
 9--------------------------------------------------------------
-Operaciones CRUD con JDBC API: ActualizaciÛn
+Operaciones CRUD con JDBC API: Actualizaci√≥n
 
-Esta diapositiva muestra la operaciÛn de actualizaciÛn.
+Esta diapositiva muestra la operaci√≥n de actualizaci√≥n.
 
-Se actualiza un registro de empleado existente y se muestra el contenido de la tabla Employee despuÈs de la operaciÛn de actualizaciÛn en la consola de salida.
-LÌneas 9-12: Cree una consulta para actualizar un registro de empleado con ID 500 y ejecute la consulta.
+Se actualiza un registro de empleado existente y se muestra el contenido de la tabla Employee despu√©s de la operaci√≥n de actualizaci√≥n en la consola de salida.
+L√≠neas 9-12: Cree una consulta para actualizar un registro de empleado con ID 500 y ejecute la consulta.
 
-LÌneas 14-16: Imprima los campos de datos resultantes en la consola del sistema.
+L√≠neas 14-16: Imprima los campos de datos resultantes en la consola del sistema.
 
 
 10 ---------------------------------------------------------------
 Operaciones CRUD con JDBC API: Eliminar
 
-Esta diapositiva muestra la operaciÛn de borrado.
+Esta diapositiva muestra la operaci√≥n de borrado.
 
-Se suprime un registro de empleado existente y el contenido de la tabla Employee despuÈs de la operaciÛn de eliminaciÛn se muestra en la consola de salida
+Se suprime un registro de empleado existente y el contenido de la tabla Employee despu√©s de la operaci√≥n de eliminaci√≥n se muestra en la consola de salida
 
-.LÌneas 7-10: Cree una consulta para eliminar un registro de empleado con ID 500 y ejecutar la consulta.
+.L√≠neas 7-10: Cree una consulta para eliminar un registro de empleado con ID 500 y ejecutar la consulta.
 
 
-LÌneas 12-13: Imprimir los campos de datos resultantes en la consola del sistema
+L√≠neas 12-13: Imprimir los campos de datos resultantes en la consola del sistema
 
 11-----------------------------------------------------------------
 
@@ -173,35 +173,36 @@ SQLException Class
 
 SQLExceptioncan be used to report details about resulting database errors. To report all the exceptions thrown, you can iterate through the SQLExceptions thrown:
 
-ïA SQLExceptionis thrown from errors that occur in one of the following types of actions: driver methods, methods that access the database, or attempts to get a connection to the database.
+‚Ä¢A SQLExceptionis thrown from errors that occur in one of the following types of actions: driver methods, methods that access the database, or attempts to get a connection to the database.
 
 
 The SQLExceptionclass also implements Iterable. Exceptions can be chained together and returned as a single object
 
 
-.ïA SQLExceptionis thrown if the database connection cannot be made due to incorrect username or password information or if the database is offline.
+.‚Ä¢A SQLExceptionis thrown if the database connection cannot be made due to incorrect username or password information or if the database is offline.
 
 
-ïSQLExceptioncan also result by attempting to access a column name that is not part of the SQL query
+‚Ä¢SQLExceptioncan also result by attempting to access a column name that is not part of the SQL query
 
 
-ïSQLExceptionis also subclassed, providing granularity of the actual exception thrown
+‚Ä¢SQLExceptionis also subclassed, providing granularity of the actual exception thrown
 
 
 12-----------------------------------------------------------
 
 
-Al cerrar un objeto de conexiÛn, se cerrar· autom·ticamente cualquier objeto de instrucciÛn creado con esta conexiÛn.
+Al cerrar un objeto de conexi√≥n, se cerrar√° autom√°ticamente cualquier objeto de instrucci√≥n creado con esta conexi√≥n.
 
-ï El cierre de un objeto Statement cerrar· e invalidar· cualquier instancia de ResultSetcreated por el objeto Statement.
-
-
-ï Los recursos en poder del ResultSet pueden no ser liberados hasta que se recoja la basura. Por lo tanto, es una buena pr·ctica cerrar explÌcitamente ResultSetobjects cuando ya no son necesarios.
+‚Ä¢ El cierre de un objeto Statement cerrar√° e invalidar√° cualquier instancia de ResultSetcreated por el objeto Statement.
 
 
-ï Cuando se ejecuta el mÈtodo close () en ResultSetis, se liberan recursos externos.
-
-ï ResultSetobjects tambiÈn se cierra implÌcitamente cuando se vuelve a ejecutar un objeto Statement asociado.
+‚Ä¢ Los recursos en poder del ResultSet pueden no ser liberados hasta que se recoja la basura. Por lo tanto, es una buena pr√°ctica cerrar expl√≠citamente ResultSetobjects cuando ya no son necesarios.
 
 
-En resumen, es una buena pr·ctica cerrar explÌcitamente JDBC Connection, Statement y ResultSetobjects cuando ya no los necesite.
+‚Ä¢ Cuando se ejecuta el m√©todo close () en ResultSetis, se liberan recursos externos.
+
+‚Ä¢ ResultSetobjects tambi√©n se cierra impl√≠citamente cuando se vuelve a ejecutar un objeto Statement asociado.
+
+
+En resumen, es una buena pr√°ctica cerrar expl√≠citamente JDBC Connection, Statement y ResultSetobjects cuando ya no los necesite.
+diego
