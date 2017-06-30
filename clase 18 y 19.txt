@@ -1,3 +1,5 @@
+Diapositiva 18
+
 Definir el diseño de la API de JDBC
 
 Conectarse a una base de datos utilizando un controlador JDBC
@@ -171,22 +173,21 @@ Líneas 12-13: Imprimir los campos de datos resultantes en la consola del sistem
 
 SQLException Class 
 
-SQLExceptioncan be used to report details about resulting database errors. To report all the exceptions thrown, you can iterate through the SQLExceptions thrown:
+SQLException puede utilizarse para informar detalles sobre los errores de base de datos resultantes. Para informar todas las excepciones lanzadas, puede iterar a través de las SQLExceptions lanzadas:
 
-•A SQLExceptionis thrown from errors that occur in one of the following types of actions: driver methods, methods that access the database, or attempts to get a connection to the database.
-
-
-The SQLExceptionclass also implements Iterable. Exceptions can be chained together and returned as a single object
+• Se genera una SQLException de errores que se producen en uno de los siguientes tipos de acciones: métodos de controladores, métodos que acceden a la base de datos o intentos de obtener una conexión a la base de datos.
 
 
-.•A SQLExceptionis thrown if the database connection cannot be made due to incorrect username or password information or if the database is offline.
+La SQLExceptionclass también implementa Iterable. Las excepciones se pueden encadenar y devolver como un solo objeto
 
 
-•SQLExceptioncan also result by attempting to access a column name that is not part of the SQL query
+• Se genera una SQLException si no se puede realizar la conexión a la base de datos debido a una información de nombre de usuario o contraseña incorrecta o si la base de datos está fuera de línea.
 
 
-•SQLExceptionis also subclassed, providing granularity of the actual exception thrown
+• SQLException también puede resultar intentando acceder a un nombre de columna que no es parte de la consulta SQL
 
+
+• SQLException también se subclase, proporcionando granularidad de la excepción real lanzada
 
 12-----------------------------------------------------------
 
@@ -205,4 +206,68 @@ Al cerrar un objeto de conexión, se cerrará automáticamente cualquier objeto 
 
 
 En resumen, es una buena práctica cerrar explícitamente JDBC Connection, Statement y ResultSetobjects cuando ya no los necesite.
-diego
+
+
+
+-----------------------
+
+
+Diapositiva 19
+
+Después de completar esta lección, usted debería ser capaz de:
+
+• Describir las ventajas de localizar una aplicación
+
+• Definir lo que representa una localidad
+
+• Lea y establezca el entorno local mediante el objeto Locale
+
+• Crear y leer un archivo de propiedades
+
+• Crear un paquete de recursos para cada entorno
+
+• Llamar a un paquete de recursos desde una aplicación
+
+Cambiar la configuración regional de un paquete de recursos
+
+
+1-----------------------------------------------------------
+
+
+¿Por qué localizar?
+
+La decisión de crear una versión de una aplicación para uso internacional ocurre a menudo en el inicio de un proyecto de desarrollo.
+
+• Software orientado a regiones y lenguajes
+
+• Fechas, números y monedas formateadas para países específicos
+
+• Capacidad para conectar datos específicos del país sin cambiar el código.
+
+La localización es el proceso de adaptación del software para una región o un idioma específico mediante la adición de componentes específicos de la configuración regional y la traducción de texto. Además de los cambios de idioma, los elementos culturalmente dependientes, como fechas, números, monedas, etc. Es diseñar para la localización de modo que no se requieran cambios de codificación.
+
+2-----------------------------------------------------------
+Localizar una aplicación de ejemplo:
+
+• Interfaz de usuario basada en texto
+
+• Localizar menús
+
+• Mostrar localizaciones de moneda y fecha
+
+
+En el resto de esta lección, esta sencilla interfaz de usuario basada en texto se localizará para francés, chino simplificado y ruso. Introduzca el número indicado por el menú y esa opción de menú se aplicará a la aplicación. Introduzca qpara salir de la aplicación.
+
+3------------------------------------
+
+Un Local especifica un idioma y un país en particular:
+
+• Lenguaje -Un código alpha-2 o alpha-3 ISO 639- "en" para inglés, "es" para español-Siempre utiliza minúsculas
+
+• País: utiliza el código de país ISO 3166 alpha-2 o el código de área numérica M.49 de la ONU: "US" para Estados Unidos, "ES" para España: siempre usa mayúsculas
+
+• Consulte los Tutoriales de Java para obtener detalles de todos los estándares de usuario.
+
+
+
+
