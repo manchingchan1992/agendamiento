@@ -308,6 +308,9 @@ EL BENEFICIO DE UN ARCHIVO DE PROPIEDADES ES LA CAPACIDAD DE FIJAR VALORES PARA 
 La convención para un archivo de propiedades es <filename> .properties, pero el archivo puede tener cualquier extensión que desee. El archivo se puede ubicar en cualquier lugar que la aplicación pueda encontrar.
 5 ----------------------------------------------
 
+Carga y uso de un archivo de propiedades
 
+En el fragmento de código, se crea un objeto "properties". Luego, con una instrucción try, se abre un archivo relativo a los archivos de origen en el proyecto NetBeans. Cuando se carga, los pares nombre-valor se pueden utilizar en su aplicación.
+Los archivos de propiedades le permiten inyectar fácilmente información de configuración u otros datos de aplicación en la aplicación.
 
 
