@@ -269,5 +269,45 @@ Un Local especifica un idioma y un país en particular:
 • Consulte los Tutoriales de Java para obtener detalles de todos los estándares de usuario.
 
 
+Locale aLocale = new Locale.Builder().setLanguage("fr").setRegion("CA").build();
+
+
+Ejemplo 
+
+Date d = new Date();
+DateFormat df1 = DateFormat.getDateInstance(DateFormat.LONG, new Locale("es"));
+DateFormat df2 = DateFormat.getDateInstance(DateFormat.LONG, new Locale("es","MX"));
+DateFormat df3 = DateFormat.getDateInstance(DateFormat.LONG, new Locale("en","US"));
+
+System.out.println(df1.format(d));
+System.out.println(df2.format(d));
+System.out.println(df3.format(d));
+
+Que nos imprime:
+21 de diciembre de 2007
+21 de diciembre de 2007
+December 21, 2007
+
+4 --------------------------------------------
+
+Properties
+
+La clase java.util.Properties se utiliza para cargar y guardar pares clave-valor en Java.
+Puede almacenarse en un archivo de texto simple:
+
+hostName = www.example.com
+userName = user
+password = pass
+
+El nombre del archivo termina en .properties.
+• El archivo puede estar en cualquier lugar que el compilador pueda encontrar
+
+
+EL BENEFICIO DE UN ARCHIVO DE PROPIEDADES ES LA CAPACIDAD DE FIJAR VALORES PARA SU APLICACIÓN EXTERNAMENTE. EL ARCHIVO DE PROPIEDADES ES TIPICAMENTE LEIDO EN EL INICIO DE LA APLICACIÓN Y SE UTILIZA PARA VALORES POR DEFECTO. PERO EL ARCHIVO DE PROPIEDADES PUEDE SER TAMBIÉN PARTE INTEGRANTE DE UN SISTEMA DE LOCALIZACIÓN, DONDE GUARDA LOS VALORES DE LAS ETIQUETAS DE MENÚ Y EL TEXTO PARA VARIOS IDIOMAS QUE SU APLICACIÓN PUEDA APOYAR.
+
+La convención para un archivo de propiedades es <filename> .properties, pero el archivo puede tener cualquier extensión que desee. El archivo se puede ubicar en cualquier lugar que la aplicación pueda encontrar.
+5 ----------------------------------------------
+
+
 
 
