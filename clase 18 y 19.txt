@@ -1,3 +1,8 @@
+/**************///////////////////////*******************
+
+https://www.dropbox.com/sh/vnpsvesc0hzulim/AAB5a6THvWeUzqatNO3QvX4Ea?dl=0
+/*************///////////////////////*******************
+
 Diapositiva 18
 
 Definir el diseño de la API de JDBC
@@ -312,5 +317,56 @@ Carga y uso de un archivo de propiedades
 
 En el fragmento de código, se crea un objeto "properties". Luego, con una instrucción try, se abre un archivo relativo a los archivos de origen en el proyecto NetBeans. Cuando se carga, los pares nombre-valor se pueden utilizar en su aplicación.
 Los archivos de propiedades le permiten inyectar fácilmente información de configuración u otros datos de aplicación en la aplicación.
+
+
+6----------------------------------------------------------
+
+Loading Properties from the Command Line
+
+La información de la propiedad también se puede pasar en la línea de comandos.
+
+La información de la propiedad también se puede pasar en la línea de comandos. La ventaja de pasar propiedades desde la línea de comandos es la simplicidad. No tiene que abrir un archivo y leer de él. Sin embargo, si tiene más de unos pocos parámetros, es preferible un archivo de propiedades
+
+
+7---------------------------------------------------
+
+Resource Bundle File
+
+La diapositiva muestra un archivo de paquete de recursos de ejemplo para esta aplicación. Cada opción de menú se ha convertido en un par nombre / valor. Este es el archivo predeterminado para la aplicación. Para lenguajes alternativos, se utiliza una convención de nomenclatura especial:
+
+MessageBundle_xx_YY.properties
+
+where xxis the language code and YYis the country code
+
+8 ------------------------------------------------------
+Sample Resource Bundle Files
+
+La diapositiva muestra los archivos del paquete de recursos para el francés y el chino. Tenga en cuenta que los nombres de archivo incluyen idioma y país. El texto inglés del elemento de menú ha sido reemplazado por alternativas en francés y chino.
+
+
+Con los paquetes de recursos creados, basta con cargar los paquetes en la aplicación.
+
+  El código fuente de la diapositiva muestra los pasos.
+
+En primer lugar, cree un Localeobject que especifique el idioma y el país.
+
+  A continuación, cargue el paquete de recursos especificando el nombre del archivo base para el lote y la configuración regional actual.
+
+Tenga en cuenta que hay un par de maneras de definir una configuración regional.
+  Localeclass incluye constantes predeterminadas para algunos países.
+  Si una constante no está disponible, puede utilizar el código de idioma con el código de país para definir la ubicación. Por último, puede utilizar el método getDefault () para obtener la ubicación predeterminada.
+9------------------------------------------------------
+Sample Application: Main Loop
+
+
+Para esta aplicación, un método run contiene el bucle principal. El bucle se ejecuta hasta que la letra "q" se escribe como entrada.
+
+Un interruptor de cadena se utiliza para realizar una operación basada en el número introducido.
+
+Se realiza una llamada simple a cada método para realizar cambios en la configuración regional y mostrar y dar formato a la salida
+
+10------------------------------------------
+
+The printMenuMethod
 
 
