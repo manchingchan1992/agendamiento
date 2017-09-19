@@ -76,3 +76,10 @@ Se puede utilizar una superclase como una referencia Ej:
 
 Clothing clothinUno = new Shirt();
 Clothing clothingDos = new Treousers();
+
+Nota : esto puede ser util cuando deseamos tener una lista de items ropa.
+
+
+*Aplicando polimorfismo 
+
+
