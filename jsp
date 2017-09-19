@@ -1,30 +1,28 @@
-10 mas sobre condicionales
---------------------------------------------
+11. Utilizando herencia
+------------------------------------------------------
 
-Objetivos
---------------------------------------------
--Utilizar correctamente todos los operadores condicionales 
--Probar la igualdad de valkores entre Strings
--decalrar una sentencia "if/else" lograr el resultado esperado
--Utilizar la sentencia "switch" para lograr el resultado esperado
+-Definir herencia en el contexto de una jerarquía de clases Java
+-Crear una subclase
+-Sobreescribir un metodo en la superclase
+-Utilizar una palabra clave  para referenciar a una superclase
+-Definir polimorfismo
+-Castear la referencia de una superclase al tipo de una subclase
+-Utilizar el operador "Instance of" para probar el tipo de objeto
+-Explicar la diferencia entre clases abstractas y no abstractas 
+-Crear una jerarquía de clases mediante la extensión de una clase abstracta
 
-Operadores relacionales
---------------------------------------------
-Los operadores relacionales no funcionan para la comaración de los valores del objet String
 
-Probando la igualdad entre variables de tipo String 
---------------------------------------------
-Se utiliza el operador == en objetos para comparar posiciones en memoria, para comparar
-el valor de un objeto String lo mas prudente es utilizar la funcion .equalsIgnoreCase()
+*Implementando herencia
 
-Es prudente utilizar la funcion equalsIgnoreCase() para comparar cadenas si no se desea comparar por mayusculas o minusculas
+La palabra "extends" crea una relacion de herencia entre dos clase en este caso la clase superclase es "Clothing" y
+la subclase "Shirt".
+Como primer resultado los objetos de la clase "Shirt" se les compartira los metodos "display" y "setSize" de la 
+clase "Clothing", es decir estos pueden ser accedidos por los objetos "Shirt". Por lo tanto, el siguiente 
+codigo compila y ejecuta:
 
-Cuando se utiliza la palabra new para crear un objeto String se esta forzando a java para q cree un objeto y no  en el pool de String 
+Shirt MyShirt = new Shirt();
+myShirt.setSize('M');
 
-Operadores condicionales 
----------------------------------------------
-Frecuentemente se utilizan los operadores relacionales en conjunto con los operadores condicionales,
-En ocasiones se da la necesidad de de tomar una decision basado en mas de una condicion
+*
 
-condicional ternario
------------------------------------------
+
