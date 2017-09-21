@@ -72,6 +72,9 @@ Con la frase "is a" podemos probar si CLothing es una clase candidata a ser suoe
 
 *Utilizando la superclase como una referencia 
 
+
+Hasta ahora, sólo se han hecho referencia a objetos con una variable de referencia de la misma clase
+
 Se puede utilizar una superclase como una referencia Ej:
 
 Clothing clothinUno = new Shirt();
@@ -82,4 +85,23 @@ Nota : esto puede ser util cuando deseamos tener una lista de items ropa.
 
 *Aplicando polimorfismo 
 
+El polimorfismo se logra invocando uno de los métodos de la superclase.
+Un metodo tomara un comportamiento diferente dependiendo del tipo de objeto
 
+*Accediendo a los metodos utilizando la referencia de los de la super clase 
+
+Utilizando la referencia de la superclase no es permitido acceder a los metodos propios de la subclase.
+
+
+*Casteando el tipo de referencia 
+
+Ejemplo:
+
+Clothing c1  = new Trousers();
+
+((Trousers)c1).getFit() --> Accediendo a un metodo que esta definido en la superclase
+
+* Operador instance of  
+
+La palabra reservada instance of nos permite no cometer errores a la hora realizar un casting de objetos (CastClassException), ya que esta 
+nos devuelve el tipo de objeto
