@@ -137,4 +137,24 @@ El dilema de la herencia multiple
 
 ¿Puedo heredar de dos clases diferentes? Quiero usar métodos de ambas clases
 
+*Interfaz java 
+
+Una interfaz es similar  a una clase abstracta excepto que :
+
+-Los metodos  son implicitamente abstractos excepto por lo que estan antecedidos de la palabra reservada default
+-Una clase no hereda pero si implementa
+-Una clase puede implementar  mas de una interfaz
+
+
+Todos los metodos abstractos de la interfaz deben ser implementados  por las clases
+    
+    
+Implementando la interfaz Returnable
+
+
+
+
+
+
+
 
