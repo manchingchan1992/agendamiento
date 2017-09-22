@@ -1,4 +1,4 @@
-11. Utilizando herencia
+12. Utilizando herencia
 ------------------------------------------------------
 
 -Definir herencia en el contexto de una jerarquía de clases Java
@@ -105,3 +105,36 @@ Clothing c1  = new Trousers();
 
 La palabra reservada instance of nos permite no cometer errores a la hora realizar un casting de objetos (CastClassException), ya que esta 
 nos devuelve el tipo de objeto
+
+
+*Clases abstractas 
+
+En ocasiones una super clase tiene sentido como un objeto y en otras no, en el ejemplo de seleccionar items no existe un item ropa.
+
+Utilice la palabra reservada abstract para crear un clase especial que :
+
+- No puede ser instancida 
+- Puede contener metodos concretos 
+- Puede contener metodos abstractos  que  deben ser implementados por las subclases
+Nota : los metodos concretos declarados en la clase abstracta podran ser heredados o sebreescritos por las subclases.
+    los metodos abstractos deberan ser implementados por las subclases.
+    
+ 
+13. Utilizando interfaces 
+-----------------------------
+
+Objetivos 
+
+-SObreescribir el metodo  toString de la clase object 
+-Implementar una interfaz en una clase
+-Castear una referencia de interfaz para permitir el acceso a un metodo del objeto 
+-Escribir una simple expresion lambda que consume o utiliza un predicate (interfaz funccional )
+
+
+*Sobreescribiendo el metodo toString  la clase 
+
+El dilema de la herencia multiple 
+
+¿Puedo heredar de dos clases diferentes? Quiero usar métodos de ambas clases
+
+
