@@ -23,6 +23,28 @@ paso numero 2.
 los atributos que le permitan decidir que tipo de objeto debe retorna (si es isoceles o equilatero).
 4. en la clase principal crear un objeto de la clase factoriaTriangulo y llamar al metodo de creacion de triangulos
 y asginacioón a un objeto Triangulo. (Triangulo triangulo = factoriatriangulo.fabrica(10,10,10);)
+
+*Observer - 
+
+-Un objeto   necesita notificar a otros objetos cuando cambia su estado. La idea es encapsular estos aspectos en
+objetos diferentes permite variarlos y reutilizarlos indeopendientemente.
+-Cuando existe una relación de dependencia  de uno a muchos que puede requerir que un objeto notifique a múltiples
+objetos que dependen de él cuando cambia su estado
+
+1.Crear la clase del objeto observable 
+2.Crear una interfaz que tenga un metodo abstracto que implementen los observadores
+3.Crear las clases observadoras implementando el o los metodos de la interfaz anterior
+4.Crear una interfaz que tenga definido los metodos abstractos atach, detach y notify 
+5.Crear clase que implemente la interfaz anterior y defina un arreglo privado y estatico que contenga en el tipo <>
+ la interfaz que implemnetan los observadores , es decir el tipo de interfaz del paso 2.
+6.Crear clase donde se define el metodo que recibira el objeto observable y se evaluara si cumple con un estado o caracteristica 
+particular y de ser asi se crea un objeto de la clase que implementa la interfaz del paso 4 y llama al metodo notify
+7.En el main se crea un objeto de la clase que implementa la interfaz del paso 4 y se llama al metodo attach para 
+adicionar los observadores.
+8.En el main crear un objeto o los objetos necesarios del observable
+9.crear un objeto de la clase que se crea en el paso 6 y enviar el objeto observable por el metodo que este objeto tiene.
+
+
 ----------------------------
 Pendientes :
 *metodo que reciba un vector que en alguna posicion tenga otro vector (sub) y devuelva la
