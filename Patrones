@@ -50,7 +50,7 @@ Pendientes :
 *metodo que reciba un vector que en alguna posicion tenga otro vector (sub) y devuelva la
 posición o posiciones donde exista un subvector.
 
-*Programa que contabilice (medición) el tiempo que demora un metodo en ejecutarse (callback java)
+*Programa que contabilice (medición) el tiempo que demora un metodo en ejecutarse (callback java - observable)
 
 *Conceptos webservices restfull y soap (Ejemplo de cada uno)
 
