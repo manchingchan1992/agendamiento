@@ -17,6 +17,12 @@ paso numero 2.
 
 -Crear diferentes objetos de la misma naturaleza en tiempo de ejecucion
 
+1. crear una clase abstracta con el constructor y metdos abstractos a implemnetar en subclases  (Super Triangulo)
+2. extender de la clase abstract las clases necesarias (isoceles, equilatero)
+3. Crear clase factoriaTriangulo con metodo que devuelva el tipo de objeto triangulo y que reciba 
+los atributos que le permitan decidir que tipo de objeto debe retorna (si es isoceles o equilatero).
+4. en la clase principal crear un objeto de la clase factoriaTriangulo y llamar al metodo de creacion de triangulos
+y asginacioón a un objeto Triangulo. (Triangulo triangulo = factoriatriangulo.fabrica(10,10,10);)
 ----------------------------
 Pendientes :
 *metodo que reciba un vector que en alguna posicion tenga otro vector (sub) y devuelva la
