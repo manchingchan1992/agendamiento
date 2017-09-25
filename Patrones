@@ -1,0 +1,47 @@
+Patrones de Diseño
+
+*Singlenton (Creación )
+
+-Asegurarse de tener solo un objeto para todas las solicitudes
+-No pemritir crear mas de un objeto asi algun problema lo solicite
+
+como crearlo :
+1.Se debe crear la clase de tipo final para asegurarnos que no va hacer cambiada (inmutable).
+2.Se debe crear un objeto de la clase con modificador de acceso private , estatico y final.
+3.Se debe crear el constructor con modificador de acceso private , para segurarnos que no pueda ser
+instanciado mediante este metodo.
+4.Se crea un metodo con modificador de acceso publico y estatico que retornara la instancia del objeto que se creo en el 
+paso numero 2.
+
+*Factory - fabrica (Creacion)
+
+-Crear diferentes objetos de la misma naturaleza en tiempo de ejecucion
+
+----------------------------
+Pendientes :
+*metodo que reciba un vector que en alguna posicion tenga otro vector (sub) y devuelva la
+posición o posiciones donde exista un subvector.
+
+*Programa que contabilice (medición) el tiempo que demora un metodo en ejecutarse (callback java)
+
+*Conceptos webservices restfull y soap (Ejemplo de cada uno)
+
+*COnceptos : ajax , ejb, lazy, interface, herencia, clase abstracta, callback, sobreescritura y sobrecarga, polimorfismo
+
+*https://blog.udemy.com/entrevista-de-trabajo-de-java-las-10-preguntas-mas-frecuentes-y-como-contestarlas/
+
+*Revisar HV punto por punto (saber que decir)
+
+*Observe
+
+*Programacion reactiva
+
+*Mapas, listas ...
+
+*Patron circuit breaker 
+
+*Devops (automatizacion), despliegue continuo , Rancher 
+
+*Colas de mensajeria  (Rabbitmq)
+
+
