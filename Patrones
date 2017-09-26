@@ -45,6 +45,71 @@ adicionar los observadores.
 9.crear un objeto de la clase que se crea en el paso 6 y enviar el objeto observable por el metodo que este objeto tiene.
 
 
+
+-----------------------------------------------------
+
+Conceptos 
+
+Ajax:  AJAX es una técnica que permite, mediante programas escritos en Javascript, que un servidor
+  y un navegador intercambien información, posiblemente en XML, de forma asíncrona.
+
+Interface: Es una coleccion de metodos abstractos 
+
+Lazy:
+
+Hibernate : Hibernate es una herramienta de mapeo objeto-relacional (ORM)  que implementa el API DE PERSISTENCIA DE JAVA (JPA
+
+Ejb: te de negocio Java Enterprise, y para su ejecución necesita un contenedor EJB/J2EE (JBoss, WAS, OAS, etc). El hecho 
+      de usar EJB’s te da acceso a los servicios del Contenedor EJB (manejo de transacciones, seguridad ,persistencia, etc)
+      que simplifican bastante la construcción de soluciones empresariales.
+      
+pOJO : un POJO es una instancia de una clase que no extiende ni implementa nada en especial. Para los programadores 
+        Java sirve para enfatizar el uso de clases simples y que no dependen de un framework en especial.
+        
+javaBean : Un JavaBean (o también conocido simplemente como Bean) es una clase simple en Java que cumple con ciertas normas con 
+            los nombres de sus propiedades y métodos.Un JavaBean debe tener un constructor sin argumentos, tiene declarados todos 
+            sus atributos como privados y para cada uno de ellos un método setter y getter, añadiéndole la palabra “set” o “get” al 
+            nombre del atributo y deben ser serializables. 
+            
+jsf : JSF es un marco de trabajo para crear aplicaciones java J2EE basadas en el patron MVC
+      
+SOAP : es un protocolo estándar que define cómo dos objetos en diferentes procesos pueden comunicarse por medio de intercambio
+      de datos XML. Simple Object Access Protoco
+      
+sobrecarga:
+
+sobreescritura:
+
+Modificadores deacceso: Public,Protected,Default,Private
+
+JPA : Es un api de persistencia que permite 
+      
+xsd: Un esquema xsd es un mecanimso para comprobar la validez de un documento xml
+      
+Patrones Creacionales:
+  -Singlenton
+  -Factory
+  -Prototype (clona las instancias ya existentes)
+  
+
+Patrones de estructura:
+  -Bridge (Puente) Separa la abstracción de la implementación.
+  -Decorator (Decorador) Agrega funcionalidades a una clase de forma dinámica.
+  -Facade (Fachada) Nos provee una interfaz unificada y simple para acceder a un sistema más complejo.
+
+Patrones de comportamiento :
+  -Observer
+  -Command
+  -Memento
+  
+  
+  Pilares del la programacion oo
+  
+  - Abstraccion 
+  - Encapsulamiento
+  - Herencia
+  - Polimorfismo
+
 ----------------------------
 Pendientes :
 *metodo que reciba un vector que en alguna posicion tenga otro vector (sub) y devuelva la
@@ -72,4 +137,5 @@ posición o posiciones donde exista un subvector.
 
 *Colas de mensajeria  (Rabbitmq)
 
+*Map, Hashtable, HashMap, TreeMap, ConocurrentHashMap, LinkedHashMap
 
