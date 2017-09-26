@@ -1,0 +1,85 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fac="https://www.jaimetorres.net/faceldi-ws-emision">
+   <soapenv:Header>
+   <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" soapenv:mustUnderstand="1">
+       <wsse:UsernameToken wsu:Id="UsernameToken-EC9F7473E024359C6A14589178984712">
+       <wsse:Username>soporte</wsse:Username>
+ 	  <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">a65d0b9c07c6ffe4da2490e3f414bf2c3f3da738abd62d0ac3fe777c309e32d9</wsse:Password>
+       <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">VNRqB4w0jhpDz92hdpjXkQ==</wsse:Nonce>
+       <wsse:Created>2017-08-16T11:02:00.471-05:00</wsse:Created>
+       </wsse:UsernameToken>
+        <wsu:Timestamp>
+            <wsu:Created>2017-08-16T11:02:00.471-05:00</wsu:Created>
+            <wsu:Expires>2017-12-21T15:08:18.452-05:00</wsu:Expires>
+         </wsu:Timestamp>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <fac:documentoRequest>
+         <fac:usuario>
+            <fac:usuario>jt</fac:usuario>
+            <fac:password>1</fac:password>
+            <fac:tipoIdentificacionUsuario>31</fac:tipoIdentificacionUsuario>
+            <fac:numeroIdentificacionUsuario>860502327</fac:numeroIdentificacionUsuario>
+         </fac:usuario>
+         <fac:adquiriente>
+            <fac:tipoIdentificacionAdquiriente>31</fac:tipoIdentificacionAdquiriente>
+            <fac:numeroIdentificacionAdquiriente>860007335</fac:numeroIdentificacionAdquiriente>
+            <fac:razonSocial>razonsocial</fac:razonSocial>
+            <fac:primerNombre>primernombre</fac:primerNombre>
+            <fac:segundoNombre>segundonombre</fac:segundoNombre>
+            <fac:primerApellido>primerapellido</fac:primerApellido>
+            <fac:segundoApellido>segundoapellido</fac:segundoApellido>
+            <fac:tipoRegimen>2</fac:tipoRegimen>
+            <fac:tipoPersona>2</fac:tipoPersona>
+		  <fac:codPais>CO</fac:codPais>
+            <fac:codCiudad>11001</fac:codCiudad>
+            <fac:direccion>calle</fac:direccion>
+            <fac:correoElectronico>b@b.com</fac:correoElectronico>            
+         </fac:adquiriente>
+         <fac:documento>
+            <fac:prefijo>NCC</fac:prefijo>
+            <fac:consecutivo>5</fac:consecutivo>
+            <fac:tipoDocumento>NC</fac:tipoDocumento>
+            <fac:fechaDocumento>2017-05-02</fac:fechaDocumento>
+            <fac:horaDocumento>08:23:00</fac:horaDocumento>
+            <fac:fechaVencimiento>2017-06-30</fac:fechaVencimiento>
+            <fac:totalDocumento>152000</fac:totalDocumento>
+	       <fac:cufe>sdjsdkgj</fac:cufe>
+            <fac:facturaAplicada>FACTURA</fac:facturaAplicada>
+            <fac:fechaFacturaAplicada>2017-06-30</fac:fechaFacturaAplicada>
+            <fac:conceptoNota>21</fac:conceptoNota>
+            <fac:MediosPago>10</fac:MediosPago>
+            <fac:tasaCambio>1</fac:tasaCambio>
+            <fac:divisa>COP</fac:divisa>
+            <!--1 or more repetitions:-->
+            <fac:totalImporteImpuesto>
+               <fac:codigoImpuesto>01</fac:codigoImpuesto>
+               <fac:valorBaseImpuesto>1000000</fac:valorBaseImpuesto>
+               <fac:valorImpuesto>160000</fac:valorImpuesto>
+               <fac:impuestoRetenido>false</fac:impuestoRetenido>
+               <fac:porcentaje>19</fac:porcentaje>
+            </fac:totalImporteImpuesto>
+            <!--1 or more repetitions:-->
+            <fac:detalle>
+               <fac:idProducto>5000002000001</fac:idProducto>
+               <fac:descripcion>productoa</fac:descripcion>
+               <fac:marca>marcaa</fac:marca>
+               <fac:modelo>modeloa</fac:modelo>
+               <fac:unidadMedida>1</fac:unidadMedida>
+               <fac:cantidad>213</fac:cantidad>
+               <fac:valorUnitario>100.1</fac:valorUnitario>
+               <fac:valorTotalRegistro>213000</fac:valorTotalRegistro>
+               <fac:descuentoProducto>5</fac:descuentoProducto>
+               <fac:observaciones>sin observaciones</fac:observaciones>
+            </fac:detalle>
+            <fac:total>
+               <fac:valorDocumento>1000000</fac:valorDocumento>
+               <fac:valorBrutoDocumento>500000</fac:valorBrutoDocumento>
+               <fac:valorImpuesto>200000</fac:valorImpuesto>
+               <fac:valorBaseImpuesto>500000</fac:valorBaseImpuesto>
+               <fac:valorDescuentos>100000</fac:valorDescuentos>
+            </fac:total>
+         </fac:documento>
+      </fac:documentoRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
