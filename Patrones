@@ -53,7 +53,8 @@ Conceptos
 Ajax:  AJAX es una técnica que permite, mediante programas escritos en Javascript, que un servidor
   y un navegador intercambien información, posiblemente en XML, de forma asíncrona.
 
-Interface: Es una coleccion de metodos abstractos 
+servlet : Los Servlets son módulos escritos en Java que se utilizan en un servidor, que puede ser o no ser servidor web, 
+para extender sus capacidades de respuesta a los clientes al utilizar las potencialidades de Java.
 
 Lazy:
 
@@ -72,9 +73,15 @@ javaBean : Un JavaBean (o también conocido simplemente como Bean) es una clase 
             nombre del atributo y deben ser serializables. 
             
 jsf : JSF es un marco de trabajo para crear aplicaciones java J2EE basadas en el patron MVC
-      
+     
+webservices : Un web service es un conjunto de protocolos y estándares que sirven para intercambiar datos entre aplicaciones      
+     
 SOAP : es un protocolo estándar que define cómo dos objetos en diferentes procesos pueden comunicarse por medio de intercambio
-      de datos XML. Simple Object Access Protoco
+      de datos XML. Simple Object Access Protocol
+      
+SOA : Arquitectura orientada a servicios 
+      
+Interface: Es una coleccion de metodos abstractos     
       
 sobrecarga:
 
@@ -85,6 +92,29 @@ Modificadores deacceso: Public,Protected,Default,Private
 JPA : Es un api de persistencia que permite 
       
 xsd: Un esquema xsd es un mecanimso para comprobar la validez de un documento xml
+
+jax-ws : API a traves de la cual los programas java pueden interactuar 
+
+jax-RS : API a traves de la cual los programas java pueden interactuar a traves de servicios rest
+
+wsdl : WSDL, las siglas de Web Services Description Language, es un formato del Extensible Markup Language (XML) 
+que se utiliza para describir servicios web (WS). 
+
+REST : (Representational state transfer)
+
+ACID: Atomicity Consistency Isolation Durability
+
+JDBC template : un objeto que permite abstraer de forma mas eficiente la conexion a la base de datos,crear los objetos 
+ preparedStatement, result set y cerrar la conexion. (RowMapper)
+ 
+ JDNI : El Java Naming and Directory Interface (JNDI) es un interface de programación (API) 
+  que proporciona funcionalidades de nombrado y directorio a las aplicaciones escritas usando Java. 
+ 
+@XmlRootElement = permitira que los objetos de la clase sean serializables
+
+@Produces : indica el tipo de contenido que se le enviara al cliente 
+
+Metodos HTTP verbos RestFul: POST(Crear) ,GET(Leer) , PUT(Modificar)  Y DELETE(Eliminar) 
       
 Patrones Creacionales:
   -Singlenton
