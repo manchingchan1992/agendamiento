@@ -1,0 +1,90 @@
+*Expresiones Lambda
+-----------------------------
+
+-Modificando una lista de nombres
+
+Se imprime una lista de datos sin embargo no cambia solo imprime en mayuscula,
+la lista sigue siendo igual.
+
+-Utilizando expresiones lambda con replaceAll
+---------------------------------------------
+El API de colecciones de java ha sido modificado para recibir este tipo de expresiones,
+
+las expresiones lambda se dividen es tres partes 
+
+Primera parte los parametros: le puedo definir el tipo de dato pero no es obligatorio 
+Segunda parte : el token o flecha 	
+Tercera parte la logica: que contendra la expresion lambda (personalmente los llamo metodos locales ), puedo tener
+	un corchete de apertura y uno de cierre.
+
+Existe un metodo de collections que se llama replaceall (BUSCARLO EN EL API DEL IDE), este metodo como tal recibe 
+un unaryOperator que es una interface funcional, buscamos la interface en el codigo y nos damos cuenta que desde java 8
+ya podemos utilizar metodos estaticos dentro de una interface, el caso es que la interface UnaryOperator extiende de la 
+interface function que recibe dos tipos de datos , si nos damos cuenta es el mismo T que envio a la primera interface es 
+decir unaryOperator (no se preocupen mucho si no entienden los parametros, mas adelante se ven clases genericas), entramos a la 7
+interface Function y se evidencia que solo tiene un metodo abstracto que es "apply" (en function vamos a ver un metodo default y otros
+recordando que la regla dice que solo debe tene un metodo abstracto).
+
+unaryOPerator me recibe un tipo de dato y me devuelve un mismo tipo de dato (tatuarlo)
+
+Cuando utilizamos la interface function le decimos que reciba un tipo de dato devuelva otro, vamos a la diapositiva 
+
+
+Nota : interface funcional es quella que solo tien un metodo abstracto, asi diferenciamos una interface funcional a un normal
+
+-Expresiones lambda
+-------------------------------------------------
+Son como metodos usados como argumentos de otros metodos (se pueden ver como metodos locales , metodos anidados)
+
+si en la tercera parte de la expresion lambda definims corchetes nos obliga a implementar la palabra return, ademas podemos definir mas acciones
+como se muestra a continuacion:
+
+
+myList.replaceAll((String s) -> {sout("Soy lambda"); return s.toUpperCase();})
+
+-LAs api mejoradas que utilizan lambda
+----------------------------------------------
+
+Hay tres tipos de API mejoradas que aprovechan  las expresiones lambda 
+
+java.util.functions -> una api nueva donde se definen todas las expresiones lambda que java provee
+
+ir al API de java y busca java.util.function y visualizar las interfaces de dicho paquete q definen la utilizacion de una expresion lambda
+
+Predicate -> una interface famosa que van a preguntar en el examen
+
+
+Tipo lambda UnaryOperator
+------------------------------------------
+
+
+INterface predicate
+----------------------------------------
+es una interface funcional por que solo tiene un metodo abstracto, que me dice el codigo que recibe un tipo de dato cualquiera
+y devuelve un booleano.
+
+
+toma un solo dato como argumento y devuelve un booleano 
+
+
+*Excepciones 
+----------------------------------------
+NO trae nada nuevo respecto a java siete (en la version 7 se implemento el try cin recursos)
+
+Objetivos :
+
+-como vamos a manipular eventos inesperados en un programa 
+-Enumerar los tre tipos de clases throwable
+-Determinar qué excepciones se lanzan para cualquier clase de fundación
+-Describa qué sucede en la pila de llamadas cuando se produce una excepción y no se captura
+-Escribir codigo para manejar una excepcion lanzada por una clase base de java
+
+
+Que es una excepcion
+-----------------------------------------
+Java maneja situaciones inesperadas usando excepciones
+
+con una excepcion podemos hacer dos cosas
+
+
+
