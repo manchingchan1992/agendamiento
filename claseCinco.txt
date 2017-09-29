@@ -84,7 +84,31 @@ Que es una excepcion
 -----------------------------------------
 Java maneja situaciones inesperadas usando excepciones
 
-con una excepcion podemos hacer dos cosas
+con una excepcion podemos hacer dos cosas, controlarla o manejarla , nada mas 
 
+
+ejemplos de ecxepciones 
+--------------------------------------
+
+
+
+Categorias de excepciones 
+-----------------------------------
+la clse throwable es la clase padre de todas las excepciones , me define que clases se pueden lanzar 
+
+se dividen en dos :
+
+-Errores : JAVA recomienda que estos no se deberia manejar (se utilizan para pruebas unitarias -- asseciones )
+
+-Excepciones: ecxepcion se dice es la clase de la cual van a heredar las clases que queremos lanzar o manipular excepciones 
+
+la clase exception se divide en dos componentes: las runtimeException (unchecked exceptions - ecxepciones que no
+necesitan ser controladas) y las demas (cheked exception , son las que cuando utilizamos cierto componente es necesario tenerlas en cuenta).
+
+Ejemplo 
+
+RUntime exception: un nullpointerException
+
+10:00	
 
 
