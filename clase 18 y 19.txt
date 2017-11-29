@@ -1,3 +1,5 @@
+https://forum.ionicframework.com/t/after-splash-screen-display-white-screen-long-time/80162/4
+
 /**************///////////////////////*******************
 
 https://www.dropbox.com/sh/vnpsvesc0hzulim/AAB5a6THvWeUzqatNO3QvX4Ea?dl=0
