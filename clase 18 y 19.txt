@@ -1,3 +1,10 @@
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore JTC AppAsopagos.apk JTC
+
+C:\Users\des123\Documents>C:\Users\des123\AppData\Local\Android\Sdk\build-tools\
+27.0.1\zipalign -v 4 android-release-unsigned.apk AppAsopagos.apk
+
+------------------------------------------------
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
