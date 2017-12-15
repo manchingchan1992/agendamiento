@@ -1,4 +1,6 @@
 
+<preference name="loadUrlTimeoutValue" value="60000" /> 
+
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore JTC AppAsopagos.apk JTC
 
 C:\Users\des123\Documents>C:\Users\des123\AppData\Local\Android\Sdk\build-tools\
