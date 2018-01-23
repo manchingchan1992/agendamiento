@@ -1,0 +1,47 @@
+Estructura Básica  --------------------------------------------------
+
+<!DOCTYPE>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Mi primera página</title>
+</head>
+<body>
+  <p>Hola mundo</p>
+</body>
+</html>
+
+Se define el <!DOCTYPE html> para hacer referencia a la especificacion HTML5
+El atributo lang del elemeto html hace referencia al lenguaje del sitio
+El elemento meta permite definir metadastos entre estos la codificación charset
+utf-8 es un formato de codificación de caracteres
+
+
+Elemento estructurales -------------------------------------------------
+
+Nos permitirans agrupar y ordenar el contenido de nuestra pagina web 
+
+En HTML4 encontramos dos elementos genericos:
+
+div  : Es un contenedor que se puede utilizar para agrupar secciones de contenido en bloque
+
+span: Es un contenedor que sirve para agrupar secciones de contenido en linea
+
+Elementos en bloque :
+header - article - section - aside - footer
+
+Elementos en linea
+a - img - td
+
+Precauciones: la propiedad display de algunos elementos puede verse afectado en algunos navegadores
+
+Una estructura de esta forma esta bien para empezar pero no para trabajar con HTML5
+https://codepen.io/diegoe2a/pen/VyNRgw
+
+Una estructura con HTML5 seria de la siguiente forma
+https://codepen.io/diegoe2a/pen/Levavw
+
+HTML5
+El elemento header define el encabezado de la pagina web
+El elemento nav contiene el elemento 
+
