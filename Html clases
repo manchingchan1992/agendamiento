@@ -1,3 +1,63 @@
+Conceptos ----------------------------------------------------------
+
+- El Consorcio WWW:  en inglés: World Wide Web Consortium (W3C), es un consorcio internacional que
+genera recomendaciones y estándares que aseguran el crecimiento de la World Wide Web a largo plazo.
+
+Este consorcio fue creado en octubre de 1994, y está dirigido por Tim Berners-Lee, el creador original 
+del URL (Uniform Resource Locator, Localizador Uniforme de Recursos), del HTTP (HyperText Transfer Protocol,
+Protocolo de Transferencia de HiperTexto) y del HTML (Hyper Text Markup Language, Lenguaje de Marcado de HiperTexto), 
+que son las principales tecnologías sobre las que se basa la Web.
+
+- Mozilla foundation : Mozilla Foundation es una organización sin ánimo de lucro dedicada a la creación de software libre. 
+Tiene como misión «mantener la elección y la innovación en Internet». La fundación es conocida por crear el navegador Mozilla 
+Firefox.
+
+- Navegadores : Aplicativos clientes capaces de interpretar un lenguaje de hipertexto
+
+- Niveles de madurez de los estandares
+
+Borrador de trabajo (WD)
+Después de que suficiente contenido ha sido recopilado por el 'editor de borradores' y de la discusión, puede ser publicado
+como borrador de trabajo (WD, del inglés Working Draft) para su revisión por la comunidad. Un documento WD es la primera 
+forma de un estándar que está disponible públicamente. Comentarios de prácticamente cualquier persona son aceptados, aunque 
+no se hacen promesas con respecto a actuar sobre algún elemento en particular comentado.
+
+En esta etapa, el modelo de documento puede tener diferencias significativas respecto a su forma final. Como tal, cualquier
+persona que implementa estándares WD deben estar dispuestos a modificar significativamente sus implementaciones como el 
+estándar madura.
+
+Recomendación candidata (CR)
+Una recomendación candidata (en inglés: Candidate recommendation) es una versión de una norma que es más madura que el WD. 
+En este punto, el grupo responsable de la norma está convencido de que la norma cumple con su objetivo. El propósito de la 
+CR es obtener ayuda de la comunidad de desarrollo en cuanto a la implementación de la norma.
+
+El documento estándar puede cambiar aún más, pero en este momento, se decidió en su mayoría características significativas.
+El diseño de estas características aún puede cambiar debido a los comentarios de los ejecutores conforme el estándar madura.
+
+Recomendación propuesta (PR)[editar]
+Una recomendación propuesta (en inglés: Proposed recommendation) es la versión de una norma que ha pasado los dos niveles 
+anteriores. Los usuarios de la norma proporcionan entrada. En esta etapa, el documento se presentó al Consejo Asesor del
+W3C para su aprobación final.
+
+Si bien este paso es importante, rara vez causa cambios significativos en un estándar a medida que pasa a la siguiente fase.
+
+Tanto candidatos y propuestas pueden entrar en "última llamada" para indicar cualquier información adicional que deba ser 
+tenida en cuenta.
+
+Recomendación de W3C 
+Una recomendación de W3C  (en inglés: W3C recommendation) es la etapa más madura de desarrollo. En este punto, 
+la norma ha sido objeto de amplia revisión y pruebas, tanto en condiciones teóricas y prácticas. La norma está 
+respaldada por el W3C, lo que indica su disposición para su despliegue al público, y fomentar un apoyo más generalizado
+entre los ejecutores y los autores.
+
+Recomendaciones a veces se pueden implementar de forma incorrecta, en parte, o nada en absoluto, pero muchas normas definen
+dos o más niveles de conformidad que deben seguir los desarrolladores si se desean etiquetar su producto como compatible
+con W3C.
+
+-Ruta para verfifcar HTML5
+https://checker.html5.org/
+
+
 Estructura Básica  --------------------------------------------------
 
 <!DOCTYPE>
