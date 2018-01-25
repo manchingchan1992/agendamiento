@@ -91,6 +91,35 @@ http , es un protocolo sin estado si se permanece conectado en una sesion es gra
 archivo que contiene información )
 Es normal una variante de http a htps de forma general lo que hace es añadir una capa de seguridad
 
+
+URL
+
+Un URL (Uniform Resource Locator) se utiliza para ubicar un recurso en Internet. Los URLs no solo se pueden utilizar para el 
+protocolo HTTP, se utilizan en muchos otros protocolos.
+
+La siguiente imagen muestra las partes de un URL utilizando dos ejemplos:
+
+URL
+
+
+Esquema: El esquema define el protocolo a utilizar, para HTTP puede ser http o https (el protocolo seguro de HTTP).
+
+Host: La IP o el nombre del servidor que se quiere acceder (p.e. 127.0.0.1, localhost, google.com, www.google.com.co, etc.)
+
+Puerto: El puerto en el que está escuchando el servidor HTTP. Si se omite se asume que es el 80.
+
+Path: La ruta al recurso que se quiere acceder.
+
+Query String: Contiene información adicional para el servidor en forma de propiedades (atributo=valor). Las propiedades 
+se separan por &.
+
+Fragmento: La referencia a una ubicación interna del documento.
+
+
+https://blog.makeitreal.camp/el-protocolo-http/
+
+https://blog.makeitreal.camp/herramientas-de-desarrollador-o-developer-tools/
+
 Estructura Básica  --------------------------------------------------
 
 <!DOCTYPE>
