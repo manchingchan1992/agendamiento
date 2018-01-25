@@ -54,9 +54,42 @@ Recomendaciones a veces se pueden implementar de forma incorrecta, en parte, o n
 dos o más niveles de conformidad que deben seguir los desarrolladores si se desean etiquetar su producto como compatible
 con W3C.
 
+
+-WHATWG : WHATWG son las siglas de Web Hypertext Application Technology Working Group, una comunidad de personas interesadas 
+en la evolución de la Web y de las tecnologías que están ligadas a ésta.
+
+Está formada por personas que forman parte de empresas importantes que trabajan en el mercado de Internet, como Mozilla, 
+Apple y Opera. Su interés es ayudar a la organización W3C para regular todos los estándares que forman parte de la Web, 
+con especial énfasis en el HTML 5
+
+- HTML Vision : https://www.w3.org/TR/html-design-principles/
+
 -Ruta para verfifcar HTML5
 https://checker.html5.org/
 
+Arquitectura web ----------------------------------------------------------------------
+
+-La World Wide Web
+
+La World Wide Web o www nace a principios de los años 90 en Suiza. Su función es ordenar y distribuir la información que 
+existe en internet.
+La World Wide Web se basa en hipertextos, es decir, páginas en las que se pueden insertar hipervínculos. Estos conducen 
+al usuario de una página web a otra o a otro punto de esa web.
+Existen sistemas de escritura para las páginas llamados "Lenguaje de marcado". El más utilizado es el HTML o "Hyper 
+Text Markup Lenguaje" (Lenguaje de marcas de hipertexto). Con esta escritura se dan las órdenes para que la información 
+se presente de uno u otro modo en las páginas web. Las marcas ("tags" o etiquetas) permiten dar formato al texto y 
+combinarlo con otros elementos multimedia. Esta página es un hipertexto HTML.
+
+-Protocolo HTTP y direccionamiento URL
+
+El protocolo HTTP se creó para que los hipertextos, hipervínculos e hipermedias cumplan su función. Son las siglas de 
+Hypertext Transfer Protocol o Protocolo de Transferencia de Hipertexto. Funciona siguiendo cuatro pasos básicos: la conexión,
+la solicitud, la respuesta y la desconexión. Es considerado un protocolo sin estado porque no guarda información sobre las
+transacciones que hace.
+Es un protocolo cliente servidor que gestiona las transacciones web, en realidad nuestro navegador es una aplicación cliente
+http , es un protocolo sin estado si se permanece conectado en una sesion es gracias a las cookies (es un pequeño
+archivo que contiene información )
+Es normal una variante de http a htps de forma general lo que hace es añadir una capa de seguridad
 
 Estructura Básica  --------------------------------------------------
 
