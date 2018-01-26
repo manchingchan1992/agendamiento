@@ -120,6 +120,73 @@ https://blog.makeitreal.camp/el-protocolo-http/
 
 https://blog.makeitreal.camp/herramientas-de-desarrollador-o-developer-tools/
 
+---------------------- Clase practica ------------------------------
+
+ ---------------------Sintaxis
+ 
+La sintaxis es la forma visible de un lenguaje por ello antes de crear nuestro primer
+documento HTML debemos tener en consideración lo siguiente:
+
+El DOCTYPE O declaración del tipo de documento es una instrucción especial  que va al inicio de nuestro 
+documento html   y permite al navegador entender  que version de HTML estamos utilizando , esta información
+determinara la manera en la que el navegador procesara el documento, en el caso de HTML5 es “<!DOCTYPE html>”
+mucho mas facil de recordar que el de versiones anteriores.
+
+- Elementos 
+
+Los elemento nos ayudan a estructurar y dar significado a las partes de un documento html, con ellos podemos crear :
+
+-Encabezados 
+-Parrafos 
+-Textos con enfasis subrayados  o cursivas 
+-Listas de elementos 
+-Tablas 
+-Imagenes 
+-Formularios 
+
+Para definir y conocer la estructura de un elemento debemos revisar los conceptos de :
+
+-contenido : pueden ser caracteres, comentarios u otros elementos.
+
+-modelo del contenido: define la estructura de un elemento, si puede o no tener contenido asi como los atrobutos 
+que puede tener , un elemento no puede tener atributos o contenidos que no formen parte de su modelo de contenido.
+
+-Etiqueta : Las etiquetas son utilizadas para delimitar el inicio y el fin de un elemento  por ello hay etiquetas
+de inicio  y de cierre.(corchete angular).
+
+NOTA: Las etiquetas no distinguen mayusculas de minusculas es decir el tipo de letra no afecta el funcionamiento 
+de una etiqueta en html , sin embargo durante el curso la escribiremos en minuscula
+
+- Atributo: siempre se expresan sobre la etiqueta de inicio y tienen un nombre y un valor :
+ pueden existir atributos vacios , sin comillas(siempre y cuando no existan espacios) ,con comillas sencillas y con
+ comillas dobles
+
+
+Atributo vacio (<p id>Elemento</p> - <p id=””>Elemento</p>)
+Atributo sin comillas (<p id=parrafo>Elemento</p>) siempre y cuando no existan espacios en blanco
+Atributo comilas simples , se pueden escribir con dobles o sencillas 
+
+
+  
+EXISTEN DOS TIPOS DE ELEMENTOS
+
+-Vacios : es aquel que su modelo de contenido  no le permite tener  ningun contenido sin embargo puede tener atributos
+ejemplo <br> <img src=””> no contienen elementos de cierre
+
+-No Vacios : Aquel que tiene un modelo de contenido con etiqueta de inicio y de cierre 
+
+Ejemplo para entender los conceptos 
+
+<p id=”parrafo”>Contenido del elemento p</p>
+
+
+Comentarios html 
+
+Escritura que no puede ser interpretada por los navegadores pero sirven de guia a los programadores 
+
+
+
+
 Estructura Básica  --------------------------------------------------
 
 <!DOCTYPE>
